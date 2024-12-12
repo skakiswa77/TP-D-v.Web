@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "276c1d68-05f7-434a-896f-6dc11a5420ae",
+		"name": "Vikings API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10929818"
+	},
+	"item": [
+		{
+			"name": "Viking",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Björn\",\n    \"attack\": 350,\n    \"health\": 100,\n    \"defense\": 200\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/viking/create.php",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"viking",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Björn\",\n    \"attack\": 350,\n    \"health\": 100,\n    \"defense\": 200\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/viking/update.php?id=1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"viking",
+								"update.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/viking/findOne.php?id=1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"viking",
+								"findOne.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/viking/find.php?limit=1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"viking",
+								"find.php"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/viking/delete.php",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"viking",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
