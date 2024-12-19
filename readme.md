@@ -32,6 +32,7 @@
 - GitHub
 - IDE (VSCode, DataGrip)
 - Postman
+- Mamp/Mamp Pro
 
 ## fichiers
 
